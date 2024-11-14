@@ -10,7 +10,7 @@ phases:
       - export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain unicorns --domain-owner 390402578229 --query authorizationToken --output text`
   build:
     commands:
-      - echo Build started on `date`
+      - echo Build started on `dates`
       - mvn -s settings.xml compile
   post_build:
     commands:
